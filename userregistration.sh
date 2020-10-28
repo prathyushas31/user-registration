@@ -1,12 +1,14 @@
-echo "enter the lastname"
-read lastname
-lastnamepattern="^[A-Z\u]{1}[a-z]*$"
-if [[ $lastname =~ $lastnamepattern ]]
+echo "enter the emaild"
+read emailid
+emailpattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+if [[ $emailid =~  $emailpattern ]]
 then
 	echo "yes"
 else
 	echo "no"
+
 fi
+
 
 
 
