@@ -1,12 +1,14 @@
-echo "enter the firstname"
-read firstname
-firstnamepattern="^[A-Z\u]{1}[a-z]*$"
-if [[ $firstname =~ $firstnamepattern ]]
+echo "enter the lastname"
+read lastname
+lastnamepattern="^[A-Z\u]{1}[a-z]*$"
+if [[ $lastname =~ $lastnamepattern ]]
 then
-	echo yes;
+	echo "yes"
 else
-	echo no;
+	echo "no"
 fi
+
+
 
 
 
