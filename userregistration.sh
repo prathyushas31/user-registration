@@ -1,13 +1,13 @@
-echo "enter the emaild"
-read emailid
-emailpattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
-if [[ $emailid =~  $emailpattern ]]
+echo "enter the mobile number" 
+read mobilenumber
+mobilenumberpattern="^[0-9]{2}[ ]?[0-9]{10}$"
+if [[ $mobilenumber =~ $mobilenumberpattern ]]
 then
-	echo "yes"
+	echo true
 else
-	echo "no"
-
+	echo false
 fi
+
 
 
 
