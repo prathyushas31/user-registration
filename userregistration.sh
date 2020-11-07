@@ -1,11 +1,11 @@
-echo "enter the mobile number" 
-read mobilenumber
-mobilenumberpattern="^[0-9]{2}[ ]?[0-9]{10}$"
-if [[ $mobilenumber =~ $mobilenumberpattern ]]
+#!/bin/bash
+read -p "enter password:" Password
+Password_Pattern="^[a-zA-Z]{8,}$"
+if [[ $Password =~ $Password_Pattern ]]
 then
-	echo true
+	echo "valid"
 else
-	echo false
+	echo "invalid"
 fi
 
 
